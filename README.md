@@ -18,14 +18,14 @@ Example:
 
 ## Setup
 
-1. Install Java 21, Fabric Loader, and Fabric API for Minecraft 1.21.1.
+1. Install Java 21, Gradle 8.8 or newer, Fabric Loader, and Fabric API for Minecraft 1.21.1.
 2. Build the mod:
 
    ```bash
-   ./gradlew build
+   gradle build
    ```
 
-   On Windows, use `gradlew.bat build`. The built JAR is placed in `build/libs/`.
+   The built JAR is placed in `build/libs/`. Optionally run `gradle wrapper` once if you want to add the Gradle wrapper, then use `./gradlew build` (or `gradlew.bat build` on Windows).
 
 3. Copy the generated JAR (not the `-sources` JAR) into your Minecraft instance's `mods` folder, alongside the matching Fabric API JAR.
 4. Define your API key in the environment that launches the Minecraft launcher. For PowerShell in the current session:
