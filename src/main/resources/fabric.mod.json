@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "minecraft_ai_chat",
+  "version": "${version}",
+  "name": "Minecraft AI Chat",
+  "description": "Chat with a configured AI provider directly from Minecraft chat.",
+  "authors": ["khiarazmi23614"],
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.khiar.minecraftaichat.MinecraftAiChatClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "fabric-api": "*",
+    "minecraft": "~1.21.1",
+    "java": ">=21"
+  }
+}
